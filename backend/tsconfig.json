@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // ES6 target for modern JS syntax
+    "module": "commonjs", // Use CommonJS modules
+    "strict": true, // Enable strict type-checking
+    "esModuleInterop": true, // Ensure compatibility with CommonJS modules
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "outDir": "./dist", // Output directory for compiled files
+    "rootDir": "./src", // Source code directory
+    "baseUrl": ".", // Set base directory for module resolution
+    "resolveJsonModule": true // Allow importing JSON files
+  },
+  "include": ["src/**/*.ts"], // Include all .ts files inside the src directory
+  "exclude": ["node_modules"] // Exclude node_modules from compilation
+}
