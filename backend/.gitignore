@@ -1,1 +1,15 @@
-env
+# Ignore node_modules
+/node_modules/
+
+# Ignore TypeScript output directory
+/dist/
+
+# Ignore environment variables file
+.env
+
+# Ignore logs
+*.log
+
+# Ignore any other files/folders you don't want in version control
+*.env
+*.local
