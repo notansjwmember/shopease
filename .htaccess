@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /shopease/
+
+# Remove .php extension for all .php files
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
