@@ -1,0 +1,21 @@
+{
+  "name": "shopease",
+  "version": "1.0.0",
+  "main": "index.php",
+  "scripts": {
+    "start": "concurrently \"nodemon --exec php -S localhost:8000 --watch . --ext php\" \"npm run scss\"",
+    "scss": "sass --watch scss:css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "nodemon": "^3.1.7",
+    "shopease": "file:"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "sass": "^1.81.1"
+  }
+}
