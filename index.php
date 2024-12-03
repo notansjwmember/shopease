@@ -1,19 +1,8 @@
 <?php
+$request = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-$request = $_SERVER['REQUEST_URI'];
-
-switch ($request) {
-    case '/api/products':
-        include 'api/products.php';
-        break;
-    case '/api/orders':
-        include 'api/orders.php';
-        break;
-    case '/api/customer':
-        include 'api/customer.php';
-        break;
-    default:
-        echo "404 Not Found";
-        break;
+if (strpos($request, '/api/') === 0) {
+    include 'routes/api.php';
+} else {
+    include 'routes/web.php';
 }
-?>
