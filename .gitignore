@@ -1,32 +1,27 @@
-# Ignore directories for logs, temporary files, etc.
 /vendor/
 node_modules/
 
-# Ignore OS-specific files
 .DS_Store           # macOS
 Thumbs.db           # Windows
 
-# Ignore IDE/editor files
 .vscode/
 .idea/
 
-# Ignore environment files (e.g., sensitive credentials)
 .env
 .env.local
+config
 
-# Ignore the build directories for CSS/JS (if using SCSS/JS build tools)
+
 /css/
 /js/
 
-# Ignore compiled PHP files (if any)
 *.phar
 *.class.php
 
-# Ignore log files
 *.log
 
-# Ignore session files
 *.sess
 
-# Ignore backup files created by editors
 *~
+
+db.php

@@ -1,0 +1,62 @@
+@use "../base/variables" as vars;
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.9rem 1.5rem;
+  border-bottom: vars.$default-border;
+  background-color: vars.$white-color;
+  z-index: 100;
+
+  .container {
+    position: relative;
+    padding: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .nav-links {
+      position: absolute;
+      display: flex;
+      gap: 40px;
+
+      .nav-link {
+        text-transform: uppercase;
+      }
+    }
+
+    .logo {
+      position: absolute;
+      text-align: center;
+      left: 50%;
+      transform: translateX(-50%);
+
+      h3 {
+        margin: 0;
+      }
+    }
+
+    .quick-links {
+      position: absolute;
+      display: flex;
+      gap: 15px;
+      right: 0;
+
+      .ti {
+        font-size: 1.5rem;
+      }
+
+      .quick-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}

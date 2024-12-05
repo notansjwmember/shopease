@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.php",
   "scripts": {
-    "start": "concurrently \"nodemon --exec php -S localhost:8000 --watch . --ext php\" \"npm run scss\"",
-    "scss": "sass --watch scss:css"
+    "start": "concurrently \"npm run scss\" \"npm run browsersync\"",
+    "scss": "sass --watch scss:css",
+    "browsersync": "browser-sync start --config bs-config.js"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
     "shopease": "file:"
   },
   "devDependencies": {
+    "browser-sync": "^3.0.3",
     "concurrently": "^9.1.0",
     "jsonwebtoken": "^9.0.2",
     "sass": "^1.81.1"

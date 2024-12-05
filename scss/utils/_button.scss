@@ -1,0 +1,42 @@
+@use "../base/variables" as vars;
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.circle-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: vars.$default-border;
+  border-radius: 50%;
+  padding: 7px;
+  transition: vars.$fast-trans;
+
+  &:hover {
+    background-color: vars.$light-gray-color;
+  }
+}
+
+.icon-cta-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px;
+}
+
+.cta-btn {
+  cursor: pointer;
+  background-color: vars.$white-color;
+  padding: 0.5rem 1.2rem;
+  border-radius: vars.$large-radius;
+  width: max-content;
+  transition: vars.$fast-trans;
+
+  &:hover {
+    background-color: vars.$light-gray-color;
+    transform: scale(0.99);
+  }
+}

@@ -1,0 +1,25 @@
+@use "../base/variables" as vars;
+
+.footer {
+  margin-top: 5rem;
+  padding: 1.5rem;
+  width: 100%;
+
+  .container {
+    display: grid;
+    grid-template-columns: 50% repeat(3, 1fr);
+
+    .head {
+      width: 25rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    ul {
+      display: grid;
+      gap: 0.5rem;
+    }
+  }
+}
