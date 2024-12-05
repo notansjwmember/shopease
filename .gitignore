@@ -23,5 +23,3 @@ config
 *.sess
 
 *~
-
-db.php
